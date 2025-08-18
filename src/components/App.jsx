@@ -12,7 +12,7 @@ import '../styles/App.css'
 function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="app-container">
           <Navbar />
           <div className="content-area">
