@@ -1,0 +1,64 @@
+
+
+:root {
+  /* Primary Colors - Coolors Palette */
+  --dark-navy: #0D1321;
+  --navy: #1D2D44;
+  --steel-blue: #3E5C76;
+  --light-blue: #748CAB;
+  --cream: #F0EBD8;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--dark-navy) 0%, var(--navy) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--steel-blue) 0%, var(--light-blue) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--light-blue) 0%, var(--cream) 100%);
+  --gradient-button: linear-gradient(135deg, var(--steel-blue) 0%, var(--light-blue) 100%);
+  --gradient-text: linear-gradient(135deg, var(--cream) 0%, var(--light-blue) 100%);
+  
+  /* Background Colors */
+  --bg-primary: #F0EBD8;
+  --bg-secondary: #E8E0C8;
+  --bg-light: #F8F4E8;
+  --bg-dark: #0D1321;
+  
+  /* Animation Colors */
+  --animation-primary: rgba(13, 19, 33, 0.1);
+  --animation-secondary: rgba(29, 45, 68, 0.1);
+  --animation-steel: rgba(62, 92, 118, 0.1);
+  --animation-light: rgba(116, 140, 171, 0.1);
+  --animation-cream: rgba(240, 235, 216, 0.1);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  
+  width: 100vw;
+
+  max-width: none; /* or remove max-width entirely */
+  margin: 0;
+}
+
+
+/* Navbar styles to ensure proper positioning */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg-primary);
+  width: 100%;
+  /* padding: 1rem 2rem; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

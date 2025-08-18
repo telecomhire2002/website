@@ -1,0 +1,430 @@
+/* RegistrationLogin.css */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #e8f4fd 50%, #fff4e6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.form-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 64rem;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/* Form Heading Styles */
+.form-card h2,
+.form-card h3,
+.form-card h4 {
+  color: #1F456E;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form-card h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.2;
+}
+
+.form-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.form-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Section */
+.form-section {
+  padding: 2rem 3rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.form-section.full-width {
+  width: 100%;
+  max-width: 64rem;
+}
+
+.form-section.half-width {
+  width: 100%;
+  max-width: 64rem;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Form Fields */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-label.radio-label {
+  margin-bottom: 0.75rem;
+}
+
+.required {
+  color: #ff8c00;
+}
+
+/* Input Styles */
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background: white;
+  color: #111827;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+/* Radio Button Styles */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.radio-input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #1e90ff;
+  margin: 0;
+}
+
+.radio-text {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* Button Styles */
+.submit-btn {
+  background: linear-gradient(135deg, #FF4500 0%, #FF6347 100%);
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 69, 0, 0.3);
+  background: linear-gradient(135deg, #FF6347 0%, #FF8C69 100%);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 69, 0, 0.2);
+  background: linear-gradient(135deg, #FF6347 100%, #FF8C69 0%);
+}
+
+/* Toggle Section */
+.toggle-section {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #E8E0C8;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #1D2D44;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggle-btn:hover {
+  color: #1e90ff;
+  transform: translateY(-1px);
+}
+
+.toggle-btn span {
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+/* Side Panel */
+.side-panel {
+  background: lightblue;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.side-panel-content {
+  max-width: 20rem;
+}
+
+.side-panel-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.side-panel-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.feature-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.feature-list {
+  font-size: 0.875rem;
+  list-style: none;
+  opacity: 0.9;
+}
+
+.feature-list li {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+  .form-layout {
+    flex-direction: row;
+  }
+  
+  .form-section.half-width {
+    width: 50%;
+  }
+  
+  .side-panel {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+  
+  .form-card {
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .form-section {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .side-panel {
+    padding: 2rem 1.5rem;
+  }
+  
+  .side-panel-title {
+    font-size: 1.5rem;
+  }
+  
+  .side-panel-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-content {
+    max-width: 100%;
+  }
+  
+  .form-section {
+    padding: 1rem;
+  }
+  
+  .side-panel {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Focus and Accessibility */
+.form-input:focus-visible,
+.form-select:focus-visible,
+.radio-input:focus-visible,
+.submit-btn:focus-visible,
+.toggle-btn:focus-visible {
+  outline: 2px solid #1e90ff;
+  outline-offset: 2px;
+}
+
+/* Loading State (Optional) */
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for smooth transitions */
+.form-section {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for select dropdowns */
+.form-select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.form-select::-webkit-scrollbar-thumb {
+  background: #1e90ff;
+  border-radius: 4px;
+}
+
+.form-select::-webkit-scrollbar-thumb:hover {
+  background: #1c7ed6;
+}

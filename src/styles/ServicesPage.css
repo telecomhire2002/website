@@ -1,0 +1,678 @@
+/* Services Page Styles - Natural & Organic */
+.services-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Styles - Natural */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: organicGradient 4s ease infinite;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3.5rem;
+  line-height: 1.6;
+}
+
+/* Job Categories Section - Organic Design */
+.job-categories {
+  background: var(--bg-warm);
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.job-categories::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="organic-hexagons" width="60" height="52" patternUnits="userSpaceOnUse"><polygon points="30,3 52,15.5 52,36.5 30,49 8,36.5 8,15.5" fill="none" stroke="%23FF6B00" stroke-width="1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23organic-hexagons)"/></svg>');
+  opacity: 0.3;
+}
+
+.job-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.job-category-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.job-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  margin-bottom: 1.5rem;
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F456E;
+  margin: 0;
+}
+
+.job-titles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.job-titles li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.category-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(31, 69, 110, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover::before {
+  transform: scaleX(1);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--bg-warm);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: naturalFloat 5s ease-in-out infinite;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.experience-level {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(255, 107, 0, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-organic);
+  display: inline-block;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.experience-level:hover {
+  background: rgba(255, 107, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.job-titles,
+.responsibilities {
+  margin-bottom: 1.5rem;
+}
+
+.job-titles h4,
+.responsibilities h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.job-titles ul,
+.responsibilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-titles li,
+.responsibilities li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.job-titles li:hover,
+.responsibilities li:hover {
+  color: var(--orange);
+  transform: translateX(4px);
+}
+
+.job-titles li::before,
+.responsibilities li::before {
+  content: '•';
+  color: var(--orange);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.job-titles li:hover::before,
+.responsibilities li:hover::before {
+  transform: scale(1.3);
+}
+
+/* Companies Section - Natural Design */
+.companies-section {
+  background: var(--bg-cool);
+  position: relative;
+}
+
+.companies-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--animation-primary), var(--animation-slate));
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.company-card {
+  background: white;
+  border-radius: var(--radius-large);
+  padding: 1.8rem;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid rgba(255, 107, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.company-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.company-card:hover::before {
+  transform: scaleX(1);
+}
+
+.company-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-strong);
+}
+
+.company-logo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: gentlePulse 4s ease-in-out infinite;
+}
+
+.company-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.company-card > p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.company-roles h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: left;
+  letter-spacing: -0.01em;
+}
+
+.company-roles ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.company-roles li {
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  position: relative;
+  padding-left: 1.2rem;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+}
+
+.company-roles li:hover {
+  color: var(--orange);
+  transform: translateX(3px);
+}
+
+.company-roles li::before {
+  content: '→';
+  color: var(--orange);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.company-roles li:hover::before {
+  transform: translateX(4px);
+}
+
+/* Benefits Section - Organic Design */
+.benefits-section {
+  background: var(--bg-warm);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="organic-stars" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="12.5" cy="12.5" r="0.8" fill="%23FF6B00" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23organic-stars)"/></svg>');
+  opacity: 0.4;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(31, 69, 110, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-warm);
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+.benefit-card:hover::before {
+  opacity: 0.05;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-strong);
+}
+
+.benefit-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 69, 110, 0.05);
+  border-radius: 50%;
+  animation: naturalFloat 5s ease-in-out infinite;
+}
+
+.benefit-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* CTA Section - Natural Design */
+.services-cta {
+  background: var(--gradient-primary);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="organic-circles" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="white" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23organic-circles)"/></svg>');
+}
+
+.services-cta h2 {
+  color: white;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.02em;
+}
+
+.services-cta p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-primary,
+.cta-secondary {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--radius-organic);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+}
+
+.cta-primary {
+  background: white;
+  color: var(--navy);
+  box-shadow: var(--shadow-soft);
+}
+
+.cta-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.cta-primary:hover::before {
+  left: 100%;
+}
+
+.cta-primary:hover {
+  background: #f8fafc;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-secondary:hover {
+  background: white;
+  color: var(--navy);
+  transform: translateY(-4px);
+}
+
+/* Animations */
+@keyframes organicGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes naturalFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design - Natural */
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  section h2 {
+    font-size: 2.4rem;
+  }
+  
+  .category-card {
+    padding: 1.8rem;
+  }
+  
+  .company-card {
+    padding: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .services-cta h2 {
+    font-size: 2.2rem;
+  }
+  
+  .services-cta p {
+    font-size: 1.1rem;
+  }
+  
+  .category-card {
+    padding: 1.5rem;
+  }
+  
+  .company-card {
+    padding: 1.2rem;
+  }
+  
+  .benefit-card {
+    padding: 1.5rem;
+  }
+} 
