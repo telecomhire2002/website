@@ -11,6 +11,7 @@ const JoinForm = () => {
     pincode: '',
     state: '',
     district: '',
+    education: '',
     designation: '',
     activity: '',
     workAtHeight: '',
@@ -65,6 +66,7 @@ const JoinForm = () => {
       circle: "Delhi",                     // you can change or ask user
       state: formData.state,
       district: formData.district,
+      education_qualification: formData.education,
       name: formData.name,
       contact_number: formData.contact,
       pin_code: formData.pincode,
@@ -200,18 +202,40 @@ const JoinForm = () => {
                       </div>
                     </div>
 
-                    <div className="form-group">
-                      <label className="form-label">
-                        Designation <span className="required">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        name="designation"
-                        value={formData.designation}
-                        onChange={handleInputChange}
-                        className="form-input"
-                        placeholder="Enter your designation"
-                      />
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">
+                          Education Qualification <span className="required">*</span>
+                        </label>
+                        <select
+                          name="education"
+                          value={formData.education}
+                          onChange={handleInputChange}
+                          className="form-select"
+                          required
+                        >
+                          <option value="">Select Education</option>
+                          <option value="10TH / 12TH">10TH / 12TH</option>
+                          <option value="DIPLOMA">DIPLOMA</option>
+                          <option value="B.E / BTECH">B.E / BTECH</option>
+                          <option value="ITI">ITI</option>
+                          <option value="GRADUATE">GRADUATE</option>
+                        </select>
+                      </div>
+                      
+                      <div className="form-group">
+                        <label className="form-label">
+                          Designation <span className="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          name="designation"
+                          value={formData.designation}
+                          onChange={handleInputChange}
+                          className="form-input"
+                          placeholder="Enter your designation"
+                        />
+                      </div>
                     </div>
 
                     <div className="form-group">
