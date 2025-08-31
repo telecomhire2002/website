@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from './LanguageContext.jsx';
 import { translations } from '../data/translations.js';
 import '../styles/Navbar.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

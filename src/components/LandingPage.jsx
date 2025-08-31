@@ -7,7 +7,6 @@ import networkImage from '../assets/network.jpg';
 import telImage from '../assets/tel.jpg';
 import '../styles/LandingPage.css';
 
-
 const LandingPage = () => {
   const { language } = useLanguage();
   const t = translations[language];
@@ -188,31 +187,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Statistics Section */}
-      <section className="statistics" id="statistics">
-        <div className="container">
-          <h2 className="animate-fade-in">Our Impact</h2>
-          <div className="stats-grid">
-            <div className="stat-item animate-scale-in">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Jobs Posted</div>
-            </div>
-            <div className="stat-item animate-scale-in" style={{animationDelay: '0.2s'}}>
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Partner Companies</div>
-            </div>
-            <div className="stat-item animate-scale-in" style={{animationDelay: '0.4s'}}>
-              <div className="stat-number">25+</div>
-              <div className="stat-label">Cities Covered</div>
-            </div>
-            <div className="stat-item animate-scale-in" style={{animationDelay: '0.6s'}}>
-              <div className="stat-number">1000+</div>
-              <div className="stat-label">Successful Placements</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How It Works Section */}
       <section className="how-it-works" id="how-it-works">
         <div className="container">
@@ -220,32 +194,97 @@ const LandingPage = () => {
           <div className="steps-grid">
             <div className="step-item animate-fade-in-left">
               <div className="step-icon">📝</div>
-              <h3>1. Create Profile</h3>
+              <h3>1. Register Yourself</h3>
               <p>Sign up and create your professional profile with skills and experience</p>
             </div>
             <div className="step-item animate-fade-in-left" style={{animationDelay: '0.2s'}}>
               <div className="step-icon">🔍</div>
-              <h3>2. Browse Jobs</h3>
-              <p>Explore local telecom opportunities from leading companies</p>
+              <h3>2. Get Verified</h3>
+              <p>Complete the verification process to access exclusive opportunities</p>
             </div>
             <div className="step-item animate-fade-in-left" style={{animationDelay: '0.4s'}}>
               <div className="step-icon">📱</div>
-              <h3>3. Apply</h3>
-              <p>Apply to positions that match your skills and location preferences</p>
+              <h3>3. Join Us</h3>
+              <p>Become part of our growing community of telecom professionals</p>
             </div>
             <div className="step-item animate-fade-in-left" style={{animationDelay: '0.6s'}}>
               <div className="step-icon">✅</div>
-              <h3>4. Get Hired</h3>
-              <p>Connect with employers and start your telecom career journey</p>
+              <h3>4. Get Paid</h3>
+              <p>Start earning with competitive compensation for your telecom expertise</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Join Us Section */}
-      
+      {/* Enhanced Footer */}
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <div className="footer-logo">
+                <h3>Telecom Hire</h3>
+                <p>Connecting telecom professionals with the best opportunities across India</p>
+              </div>
+              <div className="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest job opportunities</p>
+                <div className="newsletter-form">
+                  <input type="email" placeholder="Your email address" />
+                  <button>Subscribe</button>
+                </div>
+              </div>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home" onClick={() => scrollToSection('home')}>Home</a></li>
+                <li><a href="#about" onClick={() => scrollToSection('about')}>About Us</a></li>
+                <li><a href="#blog" onClick={() => scrollToSection('blog')}>News</a></li>
+                <li><a href="#how-it-works" onClick={() => scrollToSection('how-it-works')}>How It Works</a></li>
+              </ul>
+            </div>
+            
+            <div className="footer-section">
+              <h4>For Job Seekers</h4>
+              <ul>
+                <li><a href="#">Browse Jobs</a></li>
+                <li><a href="#">Create Profile</a></li>
+                <li><a href="#">Career Resources</a></li>
+                <li><a href="#">Success Stories</a></li>
+              </ul>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Contact Us</h4>
+              <div className="contact-info">
+                <p><i className="fas fa-envelope"></i> info@telecomhire.com</p>
+                <p><i className="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i className="fas fa-map-marker-alt"></i> Mumbai, India</p>
+              </div>
+              <div className="social-links">
+                <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="footer-bottom">
+            <div className="footer-bottom-content">
+              <p>&copy; {new Date().getFullYear()} Telecom Hire. All rights reserved.</p>
+              <div className="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
 
-export default LandingPage; 
+export default LandingPage;
