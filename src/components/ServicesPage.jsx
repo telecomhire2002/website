@@ -79,8 +79,8 @@ const ServicesPage = () => {
       </section>
 
       {/* Companies Section */}
-      <section className="companies-section">
-        <div className="container">
+      {/* <section className="companies-section"> */}
+        {/* <div className="container">
           <h2>{t.partnerCompanies}</h2>
           <p className="section-subtitle">{t.partnerCompaniesSubtitle}</p>
           
@@ -131,7 +131,7 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="benefits-section">
@@ -176,6 +176,73 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
+
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <div className="footer-logo">
+                <h3>Telecom Hire</h3>
+                <p>Connecting telecom professionals with the best opportunities across India</p>
+              </div>
+              <div className="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest job opportunities</p>
+                <div className="newsletter-form">
+                  <input type="email" placeholder="Your email address" />
+                  <button>Subscribe</button>
+                </div>
+              </div>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home" onClick={() => scrollToSection('home')}>Home</a></li>
+                <li><a href="#about" onClick={() => scrollToSection('about')}>About Us</a></li>
+                <li><a href="#blog" onClick={() => scrollToSection('blog')}>News</a></li>
+                <li><a href="#how-it-works" onClick={() => scrollToSection('how-it-works')}>How It Works</a></li>
+              </ul>
+            </div>
+            
+            <div className="footer-section">
+              <h4>For Job Seekers</h4>
+              <ul>
+                <li><a href="#">Browse Jobs</a></li>
+                <li><a href="#">Create Profile</a></li>
+                <li><a href="#">Career Resources</a></li>
+                <li><a href="#">Success Stories</a></li>
+              </ul>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Contact Us</h4>
+              <div className="contact-info">
+                <p><i className="fas fa-envelope"></i> info@telecomhire.com</p>
+                <p><i className="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i className="fas fa-map-marker-alt"></i> Mumbai, India</p>
+              </div>
+              <div className="social-links">
+                <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="footer-bottom">
+            <div className="footer-bottom-content">
+              <p>&copy; {new Date().getFullYear()} Telecom Hire. All rights reserved.</p>
+              <div className="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> 
     </div>
   );
 };

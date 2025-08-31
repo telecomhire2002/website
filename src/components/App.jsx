@@ -21,6 +21,7 @@ function App() {
                 <>
                   <LandingPage />
                   <ServicesPage />
+                  
                   {/* <TelecomGigPage /> */}
                 </>
               } />

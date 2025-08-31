@@ -675,4 +675,127 @@ section h2 {
   .benefit-card {
     padding: 1.5rem;
   }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #4da6ff;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #4da6ff;
+    width: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .social-links a:hover {
+    background: #4da6ff;
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+  
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-bottom p {
+    color: #ccc;
+    margin: 0;
+  }
+  
+  .legal-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .legal-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+  }
+  
+  .legal-links a:hover {
+    color: #4da6ff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .footer-content {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .footer-bottom-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-form input {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .newsletter-form button {
+      border-radius: 4px;
+      padding: 12px;
+    }
+  }
 } 

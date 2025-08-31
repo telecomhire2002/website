@@ -190,33 +190,45 @@ const LandingPage = () => {
       {/* How It Works Section */}
       <section className="how-it-works" id="how-it-works">
         <div className="container">
-          <h2 className="animate-fade-in">How It Works</h2>
+          <h2 className="section-title">How It Works</h2>
+          <p className="section-subtitle">Get started in just 4 simple steps</p>
           <div className="steps-grid">
-            <div className="step-item animate-fade-in-left">
-              <div className="step-icon">📝</div>
-              <h3>1. Register Yourself</h3>
-              <p>Sign up and create your professional profile with skills and experience</p>
+            <div className="step-card">
+              <div className="step-content">
+                <div className="step-icon">📝</div>
+                <h3>Register Yourself</h3>
+                <p>Create your profile with your skills and experience in just a few minutes.</p>
+              </div>
             </div>
-            <div className="step-item animate-fade-in-left" style={{animationDelay: '0.2s'}}>
-              <div className="step-icon">🔍</div>
-              <h3>2. Get Verified</h3>
-              <p>Complete the verification process to access exclusive opportunities</p>
+            <div className="step-card">
+            
+              <div className="step-content">
+                <div className="step-icon">🔍</div>
+                <h3>Get Verified</h3>
+                <p>Complete our quick verification process to unlock all opportunities.</p>
+              </div>
             </div>
-            <div className="step-item animate-fade-in-left" style={{animationDelay: '0.4s'}}>
-              <div className="step-icon">📱</div>
-              <h3>3. Join Us</h3>
-              <p>Become part of our growing community of telecom professionals</p>
+            <div className="step-card">
+      
+              <div className="step-content">
+                <div className="step-icon">🤝</div>
+                <h3>Get Hired</h3>
+                <p>Connect with top telecom companies looking for your expertise.</p>
+              </div>
             </div>
-            <div className="step-item animate-fade-in-left" style={{animationDelay: '0.6s'}}>
-              <div className="step-icon">✅</div>
-              <h3>4. Get Paid</h3>
-              <p>Start earning with competitive compensation for your telecom expertise</p>
+            <div className="step-card">
+  
+              <div className="step-content">
+                <div className="step-icon">💰</div>
+                <h3>Earn Money</h3>
+                <p>Get paid on time with our secure payment system.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced Footer */}
+      {/* Enhanced Footer
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
@@ -282,7 +294,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };

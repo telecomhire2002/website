@@ -1144,10 +1144,116 @@ section h2::after {
 
 /* How It Works Section */
 .how-it-works {
-  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-primary) 100%);
-  padding: 120px 0;
+  background-color: #f8faff;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+
+.step-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 31, 63, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 31, 63, 0.05);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4da6ff, #0066cc);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 31, 63, 0.2);
+}
+
+.step-card:hover::before {
+  height: 100%;
+  opacity: 0.03;
+}
+
+.step-icon {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.step-card h3 {
+  color: #001F3F;
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.step-card:hover h3 {
+  color: #0066cc;
+}
+
+.step-card p {
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Consistent white background for all cards */
+.step-card {
+  background: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  
+  .step-card {
+    padding: 30px 20px;
+  }
+  
+  .how-it-works {
+    padding: 60px 0;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2rem;
+  }
 }
 
 .how-it-works::before {
@@ -1163,7 +1269,9 @@ section h2::after {
 
 .how-it-works h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: #001F3F;
+  margin-bottom: 1rem;
   font-weight: 700;
   margin-bottom: 2rem;
   color: #1F456E;
@@ -1173,10 +1281,19 @@ section h2::after {
   z-index: 2;
 }
 
+.section-subtitle {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .how-it-works h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 }
